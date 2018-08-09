@@ -17,12 +17,12 @@ libraryDependencies += "com.h2database" % "h2" % "1.4.197"
 libraryDependencies += "org.assertj" % "assertj-core" % "3.6.2" % Test
 libraryDependencies += "org.awaitility" % "awaitility" % "2.0.0" % Test
 
-/*libraryDependencies ++= Seq(
+libraryDependencies ++= Seq(
   javaJpa,
   "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final" // replace by your jpa implementation
 )
 
-PlayKeys.externalizeResources := false*/
+PlayKeys.externalizeResources := false
 
 // Make verbose tests
 testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))
